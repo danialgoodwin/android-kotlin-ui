@@ -1,6 +1,7 @@
 # android-kotlin-ui
 The most easy, simple, and fast way to create a layout programmatically, using Kotlin
 
+See app/src/main/java/dev/goodwin/android/kotlinui/MainActivity.kt for real example.
 
 
 

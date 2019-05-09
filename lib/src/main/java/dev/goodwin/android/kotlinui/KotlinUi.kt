@@ -23,6 +23,7 @@ fun Context.CardView(@StyleRes style: Int? = null, view: View, onClick: (() -> U
     }
 }
 
+// TODO: Automatically wrap in ScrollView
 fun Context.HorizontalLinearLayout(@StyleRes style: Int? = null, vararg view: View): LinearLayout {
     return (if (style == null) LinearLayout(this) else LinearLayout(this, null, style)).apply {
         orientation = LinearLayout.HORIZONTAL
@@ -59,6 +60,7 @@ fun Context.TextView(@StyleRes style: Int? = null, text: String): TextView {
     return (if (style == null) TextView(this) else TextView(this, null, style)).apply { this.text = text }
 }
 
+// TODO: Automatically wrap in ScrollView
 fun Context.VerticalLinearLayout(@StyleRes style: Int? = null, vararg view: View): LinearLayout {
     return (if (style == null) LinearLayout(this) else LinearLayout(this, null, style)).apply {
         orientation = LinearLayout.VERTICAL
